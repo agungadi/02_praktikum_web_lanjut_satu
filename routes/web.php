@@ -29,9 +29,6 @@ Route::get('/about', function (){
     echo " NIM : 2041723002 </br> Nama : Agung Adi Saputra";
 });
 
-Route::get('/articles/1', function(){
-    echo "Halaman Artikel 1";
-});
-Route::get('/articles/2', function(){
-    echo "Halaman Artikel 2";
+Route::get('/articles/{id}', function($id){
+    echo "Halaman Artikel ".$id;
 });
